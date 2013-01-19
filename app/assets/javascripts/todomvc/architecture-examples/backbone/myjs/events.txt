@@ -1,0 +1,16 @@
+Model#destroy -> trigger@destroy
+Model#change -> trigger@change:property
+Model#change -> trigger@change
+Model#_validate -> trigger@error
+
+Collection#add -> trigger@error
+Collection#add -> trigger@add
+Collection#remove -> trigger@remove
+Collection#sort -> trigger@sort
+Collection#reset -> trigger@reset
+
+Router#route -> trigger@route
+
+Backbone#sync -> trigger@sync
+Backbone#sync -> trigger@error
+Backbone#sync -> trigger@request

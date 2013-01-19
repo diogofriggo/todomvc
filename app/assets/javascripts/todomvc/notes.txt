@@ -1,0 +1,16 @@
+    toggleVisible: ->
+        this.$el.toggleClass('hidden', this.isHidden())
+    isHidden: ->
+        this.status() != App.TodoFilter
+    status: ->
+        if this.model.get('completed') then 'completed' else 'active'
+
+177.97.72.162:59012
+
+		        Vanilla | Coffee
+TodoCollection	50	    |  12       4x: 48  + 2
+TodoModel	    29	    |  6        4x: 24  + 5
+TodoRouter	    28	    |  7        4x: 28  + 0
+AppView		    129	    |  61       2x: 122 + 7
+TodoView	    95	    |  38       2x: 76  + 19
+App		        10	    |  1        9x: 9   + 1
